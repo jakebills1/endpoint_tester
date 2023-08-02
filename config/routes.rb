@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   post '/post_file', to: 'test#post_file'
   get '/ping', to: 'test#ping'
+  post '/login', to: 'test#login'
+  post '/create', to: 'test#create'
 end

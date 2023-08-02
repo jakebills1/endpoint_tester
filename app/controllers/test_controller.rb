@@ -10,4 +10,16 @@ class TestController < ApplicationController
 	def ping
 		render json: "pong\n"
 	end
+  def login
+    render json: {
+      'SessionToken': '12345'
+    }
+  end
+  def create
+    render json: {
+      'Results': [
+        { 'Success': true, 'Code': '54321' }
+      ]
+    }
+  end
 end
